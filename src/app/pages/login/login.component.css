@@ -38,8 +38,8 @@ h2{
 }
 
 .joinImgRight img{
-    width: 24rem;
+    width: 20rem;
     position: fixed;
     bottom: 20px;
-    right: 0;
+    right: 10px;
 }
