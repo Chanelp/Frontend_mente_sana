@@ -1,6 +1,17 @@
-<h2 class="text-gray-600 font-bold">Accede a tu cuenta</h2> 
+<h2 class="text-gray-600 font-bold">Crear una cuenta</h2>
 <div class="w-full max-w-xs" class="login">
     <div class="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4 formulario">
+        <div>
+            <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre</label>
+            <input type="text" name="nombre" id=""
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight border-emerald-400 focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75"
+                placeholder="example@example.com">
+        </div>
+        <div>
+            <label for="apellido" class="block text-gray-700 text-sm font-bold mb-2">Apellido</label>
+            <input type="text" name="apellido" id=""
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight border-emerald-400 focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75">
+        </div>
         <div>
             <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo electrónico</label>
             <input type="email" name="" id=""
@@ -12,17 +23,22 @@
             <input type="password" name="" id=""
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight border-emerald-400 focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75">
         </div>
+        <div>
+            <label for="fechanacimiento" class="block text-gray-700 text-sm font-bold mb-2">Fecha de nacimiento</label>
+            <input type="date" name="" id=""
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight border-emerald-400 focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75">
+        </div>
         <div class="accion">
             <button
-            class="py-2 px-4 bg-emerald-400 text-white font-semibold rounded-lg shadow-md hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-45">Iniciar
-            sesión</button>
-        <span class="text-emerald-300 text-sm font-bold">¿No tienes una cuenta? Regístrate</span>
+                class="py-2 px-4 bg-emerald-400 text-white font-semibold rounded-lg shadow-md hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-45">Registrar mis datos
+                </button>
+            <span class="text-emerald-300 text-sm font-bold">Ya tienes una cuenta? Accede</span>
         </div>
     </div>
     <div class="joinImgLeft">
-        <img src="assets/svgs/join.svg" alt="Login">
+        <img src="assets/svgs/signup.svg" alt="Login">
     </div>
     <div class="joinImgRight">
-        <img src="assets/svgs/login.svg" alt="Login">
+        <img src="assets/svgs/register.svg" alt="Login">
     </div>
 </div>

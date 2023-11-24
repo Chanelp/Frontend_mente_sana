@@ -7,15 +7,14 @@
 }
 
 h2{
-    margin-top: 8rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     font-size: 2rem;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
 }
 
 .login .formulario div{
-    margin: 2rem 1rem;
+    margin: 1.6rem;
 }
 
 .login .formulario div label, input{
@@ -24,6 +23,10 @@ h2{
 
 .login .formulario .accion button{
     margin-right: 2rem;
+}
+
+.login .formulario .accion span{
+    cursor: pointer;
 }
 
 .joinImgLeft img{
