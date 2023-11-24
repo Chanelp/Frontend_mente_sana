@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    background: #cdf5e7;
+    background: linear-gradient(84deg, rgba(216, 247, 235, 1) 35%, rgb(191, 238, 242) 57%, rgb(213, 250, 236) 93%);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
