@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+h2{
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.login .formulario div{
+    margin: 2rem 1rem;
+}
+
+.login .formulario div label, input{
+    font-family: 'Quicksand';
+}
+
+.login .formulario .accion button{
+    margin-right: 2rem;
+}
+
+.joinImgLeft img{
+    width: 20rem;
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+}
+
+.joinImgRight img{
+    width: 24rem;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+}

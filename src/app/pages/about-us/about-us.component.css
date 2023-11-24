@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;500;700&family=Mohave:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 
 body {
     margin: 0;
     background: #cdf5e7;
     background: linear-gradient(84deg, rgba(216, 247, 235, 1) 35%, rgb(191, 238, 242) 57%, rgb(213, 250, 236) 93%);
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*STYLES NAV*/
@@ -24,7 +25,7 @@ nav {
 
 nav p {
     color: gray;
-    font-family: 'Mohave', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     ;
     font-size: 1.2rem;
     font-weight: bold;
@@ -37,7 +38,7 @@ nav div {
 nav div button {
     color: #69b99d;
     color: rgb(156, 155, 155);
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
     margin-right: 1.2rem;
@@ -52,7 +53,7 @@ nav div .login-btn {
     border-radius: 20px;
 }
 
-nav div button:hover {
+nav div .login-btn:hover {
     color: #55ad9d;
     cursor: pointer;
 }
@@ -81,6 +82,7 @@ main article .impact h1 {
     color: #0b2e29;
     font-size: 2.8rem;
     font-weight: bold;
+    margin-bottom: .9rem;
 }
 
 
@@ -90,6 +92,8 @@ main article .impact h1 .destacado {
 }
 
 .impact p {
+    margin-bottom: 1rem;
+    text-align: justify;
     color: rgb(122, 122, 122);
     font-weight: 500;
 }
@@ -387,7 +391,7 @@ main article .impact h1 .destacado {
 
 .subscribete .subscribir input{
     width: 280px;
-    margin-right: 2rem;
+    margin-right: 2.8rem;
     padding: 1rem;
     border: none;
     border-radius: 50px;
