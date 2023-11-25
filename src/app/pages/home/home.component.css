@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    display: flex;
+    width: auto;
+    height: 100vh;
+    background-color: black;
+}
+
+.navbar{
+    height: 5rem;
+    width: 90%;
+    background-color: cornflowerblue;
+}
+
+.container .leftSide{
+    width: 8%;
+    height: auto;
+    background-color: #10b981;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .leftSide .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5rem 1rem 1rem 1rem;
+    color: #ffffff;
+}
+
+.container .leftSide .logo p{
+    margin: 2rem 0;
+}
+
+.container .leftSide .logo svg{
+    width: 4rem;
+    margin: -18rem 0;
+}
+
+.container .leftSide .iconos{
+    margin: 1rem;
+}
+
+.container .leftSide .iconos svg{
+    margin: 2rem 0;
+}
+
+.container .leftSide .logout{
+    margin: 3rem 1rem;
+}
+
+.main{
+    width: 60vw;
+    height: auto;
+    background-color: #f2f7f1;
+}
+
+.container .rightSide{
+    height: auto;
+    width: 30%;
+    background-color: #ffffff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.main .searchAndDate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.main .searchAndDate .search{
+    margin-right: 2rem;
+    display: flex;
+}
+
+.main .searchAndDate .search span{
+    margin-right: 1rem;
+    margin-top: .4rem;
+}
+
+.main .searchAndDate .today{
+    display: flex;
+}
+
+.main .searchAndDate .today span{
+    margin-right: .5rem;
+}
+
+.main .actividad{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.main .actividad a{
+    margin: .5rem 1rem;
+}
+
+.container .rightSide .perfil{
+    margin: 2rem;
+    display: flex;
+    padding-left: 1rem;
+}
+
+.container .rightSide .expertos{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.container .rightSide .expertos .online{
+    margin: 2rem;
+    display: flex;
+    padding-left: 1rem;
+}
+
+.container .rightSide .expertos .online li{
+    margin-left: -2rem;
+    display: flex;
+}
