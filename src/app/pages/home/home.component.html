@@ -88,7 +88,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                    d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" 
+                (click)="logout()"    />
             </svg>
         </div>
     </aside>
@@ -163,8 +164,8 @@
                 <img src="https://secrecyjewels.es/blog/wp-content/uploads/2022/10/esencia-de-una-persona.jpg" class="rounded-full h-14 w-14" alt="Perfil">
             </div>
             <div>
-                <p class="font-bold">Anastasia Smith</p>
-                <span class="text-sm text-gray-500">27 años, Santo Domingo</span>
+                <p class="font-bold"> {{ userData.name }} {{ userData.last_name }} </p>
+                <span class="text-sm text-gray-500"> {{userData.email}} </span>
             </div>
         </div>
         <hr>
@@ -173,33 +174,10 @@
             <p class="text-sm text-gray-500">Especialistas de la comunidad que están en línea</p>
             <div class="online">
                 <ul>
-                    <li>
+                    <li *ngFor="let user of users()">
                         <img src="assets/images/terhome.jpg" alt="" class="rounded-full h-12 w-12 mb-4">
-                        <span class="m-4">Rene Wells</span>
-                    </li>
-                    <li>
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*" alt="" class="rounded-full h-12 w-12 mb-4">
-                        <span class="m-4">Adrian Kim</span>
-                    </li>
-                    <li>
-                        <img src="assets/images/terhome.jpg" alt="" class="rounded-full h-12 w-12 mb-4">
-                        <span class="m-4">Joshua Mcnair</span>
-                    </li>
-                    <li>
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*" alt="" class="rounded-full h-12 w-12 mb-4">
-                        <span class="m-4">Josh Morozkin</span>
-                    </li>
-                    <li>
-                        <img src="assets/images/terhome.jpg" alt="" class="rounded-full h-12 w-12 mb-4">
-                        <span class="m-4">Lucy Dylan</span>
-                    </li>
-                    <li>
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*" alt="" class="rounded-full h-12 w-12 mb-4">
-                        <span class="m-4">Viviana Kiser</span>
-                    </li>
-                    <li>
-                        <img src="assets/images/terhome.jpg" alt="" class="rounded-full h-12 w-12 mb-4">
-                        <span class="m-4">Ana Collins</span>
+                        <span class="m-4"> {{ user.name }} {{ user.last_name }}</span>
+                        <span class="m-4"> {{ user.email }} {{ user.rol }}</span>
                     </li>
                 </ul>
             </div>

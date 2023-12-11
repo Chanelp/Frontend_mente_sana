@@ -8,7 +8,7 @@
     display: flex;
     width: auto;
     height: 100vh;
-    background-color: black;
+    background-color: white;
 }
 
 .navbar{
@@ -21,9 +21,6 @@
     width: 8%;
     height: auto;
     background-color: #10b981;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    margin-left: .5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,10 +51,15 @@
 
 .container .leftSide .iconos svg{
     margin: 2rem 0;
+    cursor: pointer;
 }
 
 .container .leftSide .logout{
     margin: 3rem 1rem;
+}
+
+.container .leftSide .logout svg{
+    cursor: pointer;
 }
 
 .main{

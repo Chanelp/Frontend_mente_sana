@@ -1,0 +1,11 @@
+{
+    "/api/": {
+        "target": "https://backendmentesana-production.up.railway.app",
+        "secure": true,
+        "logLevel": "debug",
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/api": "/"
+        }
+    }
+}

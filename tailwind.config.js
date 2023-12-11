@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{html,ts,css}",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {},
@@ -9,5 +10,6 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
+    require('flowbite/plugin')
   ],
 }
