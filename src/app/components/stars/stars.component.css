@@ -1,0 +1,4 @@
+.points{
+    display: flex;
+    flex-direction: row;
+}

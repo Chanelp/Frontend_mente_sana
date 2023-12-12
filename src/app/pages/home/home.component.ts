@@ -5,6 +5,8 @@ import { User } from '../../models/users.model';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { JwtModule, JWT_OPTIONS } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
+import { SidemenuComponent } from '../../components/sidemenu/sidemenu.component';
+import { LayoutComponent } from '../../components/layout/layout.component';
 
 
 @Component({
@@ -12,7 +14,9 @@ import { Router } from '@angular/router';
   standalone: true,
   providers: [{ provide: JWT_OPTIONS, useValue: JWT_OPTIONS }, JwtHelperService],
   imports: [
-    CommonModule
+    CommonModule,
+    SidemenuComponent,
+    LayoutComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -51,12 +55,6 @@ export class HomeComponent implements OnInit {
           console.log(err);
         }
       })
-  }
-
-  logout() {
-    console.log("Cerrar sesion");
-    localStorage.removeItem("token");
-    this.router.navigateByUrl("/login");
   }
 
   getUserProfile() {
