@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 /* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --mainColor: #018766;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* headers - titles */
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
 
 body {
     margin: 0;
