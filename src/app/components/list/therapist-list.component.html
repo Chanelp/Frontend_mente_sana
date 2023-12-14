@@ -1,0 +1,6 @@
+<div class="therapist-list">
+    <div *ngFor="let therapist of therapists" (click)="onTherapistClick(therapist)">
+       <h3>{{therapist.name}}</h3>
+       <p>{{therapist.specialty}}</p>
+    </div>
+   </div>
