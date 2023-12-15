@@ -48,3 +48,23 @@
 .leftSide .logout svg{
     cursor: pointer;
 }
+.leftSide .calendar svg{
+    margin: 3rem;
+    cursor: pointer;
+}
+.leftSide .home svg{
+    margin: 3rem;
+    cursor: pointer;
+}
+.leftSide .professionals svg{
+    margin: 3rem;
+    cursor: pointer;
+}
+.leftSide .settings svg{
+    margin: 3rem;
+    cursor: pointer;
+}
+.leftSide .notifications svg{
+    margin: 3rem;
+    cursor: pointer;
+}
