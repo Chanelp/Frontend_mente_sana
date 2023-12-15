@@ -84,7 +84,7 @@ export class HomeComponent implements OnInit {
     const minute = today.getMinutes();
     const second = today.getSeconds();
 
-    const formattedDate = `${hour}:${minute} PM Today ${month}/${day}/${year}`;
+    const formattedDate = `${hour}:${minute} PM Today ${day}/${month}/${year}`;
     return formattedDate;
   }
 
