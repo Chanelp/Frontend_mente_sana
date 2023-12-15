@@ -1,42 +1,41 @@
-<app-sidemenu></app-sidemenu>
 <section class="container">
+  <form (submit)="onSubmit($event)" action="#" class="form" enctype="multipart/form-data">
     <header>Perfil de usuario</header>
-    <form action="#" class="form" enctype="multipart/form-data">
       <div class="input-box">
         <label>Nombre</label>
-        <input type="text" placeholder="Nombre" required />
+        <input type="text" placeholder="Nombre" name="nombre" required />
       </div>
       <div class="input-box">
         <label>Apellido</label>
-        <input type="text" placeholder="Apellido" required />
+        <input type="text" placeholder="Apellido" name="apellido" required />
       </div>
       <div class="input-box">
         <label>Correo Electronico</label>
-        <input type="text" placeholder="Correo Electronico" required />
+        <input type="text" placeholder="Correo Electronico" name="email" required />
       </div>
       <div class="column">
         <div class="input-box">
           <label>Numero movil</label>
-          <input type="number" placeholder="Numero movil" required />
+          <input type="number" placeholder="Numero movil" name="movil" required />
         </div>
         <div class="input-box">
           <label>Nacimiento</label>
-          <input type="date" placeholder="Nacimiento" required />
+          <input type="date" placeholder="Nacimiento" name="date" [(ngModel)]="formData.date" required />
         </div>
       </div>
       <div class="gender-box">
         <h3>Genero</h3>
         <div class="gender-option">
           <div class="gender">
-            <input type="radio" id="check-male" name="gender" checked />
+            <input type="radio" id="check-male" name="gender" value="Hombre" [(ngModel)]="formData.gender" checked />
             <label for="check-male">Hombre</label>
           </div>
           <div class="gender">
-            <input type="radio" id="check-female" name="gender" />
+            <input type="radio" id="check-female" name="gender" value="Mujer" [(ngModel)]="formData.gender" />
             <label for="check-female">Mujer</label>
           </div>
           <div class="gender">
-            <input type="radio" id="check-other" name="gender" />
+            <input type="radio" id="check-other" name="gender" value="Prefiero no decir" [(ngModel)]="formData.gender" />
             <label for="check-other">Prefiero no decir</label>
           </div>
         </div>

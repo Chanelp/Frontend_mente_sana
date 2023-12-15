@@ -29,11 +29,7 @@ export class HomeComponent implements OnInit {
   terapeutas = signal<Terapeuta[]>([]);
   token: string;
   userId: number | string;
-  userData: any = {
-    name: "Chanel",
-    last_name: "Paredes",
-    email: "chanel@gmail.com"
-  };
+  userData: any;
 
   private userService = inject(UserService);
   private terapeutaService = inject(PsicologosService);
@@ -88,7 +84,7 @@ export class HomeComponent implements OnInit {
     const minute = today.getMinutes();
     const second = today.getSeconds();
 
-    const formattedDate = `${hour}:${minute} PM Today ${day}/${month}/${year}`;
+    const formattedDate = `${hour}:${minute} PM Today ${month}/${day}/${year}`;
     return formattedDate;
   }
 
