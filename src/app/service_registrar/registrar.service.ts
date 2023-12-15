@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class RegistrarService {
-  apiUrl = 'https://backendmentesana-production.up.railway.app/auth/register'; 
+  apiUrl = 'https://backendmentesana-production.up.railway.app/therapy/new-therapy'; 
 
   constructor(private http: HttpClient) { }
 

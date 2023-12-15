@@ -45,6 +45,8 @@ export class HomeComponent implements OnInit {
 
     const decodedToken = this.jwtService.decodeToken(this.token);
     this.userId = decodedToken.sub
+
+    localStorage.setItem("idUser", JSON.stringify(this.userId));
     
     this.getUserProfile();
   }
@@ -89,7 +91,6 @@ export class HomeComponent implements OnInit {
   }
 
   getImagenUrl(index: number): string {
-    // Supongamos que tus imágenes están en la carpeta assets y siguen el patrón tera1.jpg, tera2.jpg, ...
     return `assets/images/tera${index + 1}.jpg`;
   }
 

@@ -30,4 +30,8 @@ export class UserService {
   getUserProfile(id: number | string){
     return this.http.get(`${this.apiUrl}/user/user/${id}`);
   }
+
+  agendarCita(citaData: any){
+    return this.http.post(this.apiUrl, citaData);
+  }
 }
