@@ -51,6 +51,11 @@ app-sidemenu {
     margin-top: .4rem;
 }
 
+.main .searchAndDate .search span svg:hover{
+    cursor: pointer;
+    fill: #f07979;
+}
+
 .main .searchAndDate .today{
     display: flex;
 }
