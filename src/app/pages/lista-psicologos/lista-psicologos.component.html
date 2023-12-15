@@ -1,16 +1,5 @@
-<<<<<<< HEAD
 <app-layout>
     <main class="main grid grid-cols-4 gap-12 m-16">
-        <app-card-profesional *ngFor="let ter of terapeutas(); let i = index" [terapeuta]="ter.name" [index]="i"></app-card-profesional>
+        <app-card-profesional *ngFor="let ter of terapeutas()" [terapeuta]="ter"></app-card-profesional>
     </main>
 </app-layout>
-=======
-<ul>
-    <li *ngFor="let psicologo of psicologos">
-       <h2>{{ psicologo.nombre }}</h2>
-       <h3>{{ psicologo.profesion }}</h3>
-       <p>{{ psicologo.descripcion }}</p>
-       <button (click)="agendarCita(psicologo.id)">Agendar cita</button>
-    </li>
-   </ul>
->>>>>>> be54cfd9a657bb1ec8642b45125bb813bdae5bf6
