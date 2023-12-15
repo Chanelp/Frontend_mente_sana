@@ -29,7 +29,11 @@ export class HomeComponent implements OnInit {
   terapeutas = signal<Terapeuta[]>([]);
   token: string;
   userId: number | string;
-  userData: any;
+  userData: any = {
+    name: "Chanel",
+    last_name: "Paredes",
+    email: "chanel@gmail.com"
+  };
 
   private userService = inject(UserService);
   private terapeutaService = inject(PsicologosService);

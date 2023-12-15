@@ -61,11 +61,11 @@ app-sidemenu {
 
 .main .actividad{
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .main .actividad a{
-    margin: .5rem 1rem;
+    margin: 0 .4rem;
 }
 
 .container .rightSide .perfil{
