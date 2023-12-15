@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+body {
+    font-family: Arial, sans-serif;
+}
+
+.search-results {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+}
+
+.search-results h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.search-results p {
+    margin: 0;
+}

@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let psicologo of psicologos">
+       <h2>{{ psicologo.nombre }}</h2>
+       <h3>{{ psicologo.profesion }}</h3>
+       <p>{{ psicologo.descripcion }}</p>
+       <button (click)="agendarCita(psicologo.id)">Agendar cita</button>
+    </li>
+   </ul>
