@@ -5,7 +5,7 @@ import { StarsComponent } from '../stars/stars.component';
 @Component({
   selector: 'app-modal-profesional',
   standalone: true,
-  imports: [CommonModule, StarsComponent],
+  imports: [CommonModule, StarsComponent, ModalProfesionalComponent],
   templateUrl: './modal-profesional.component.html',
   styleUrl: './modal-profesional.component.css'
 })
