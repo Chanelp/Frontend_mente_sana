@@ -9,7 +9,10 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [CommonModule, RouterOutlet, ReactiveFormsModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
+  
 })
 export class AppComponent {
   title = 'Mentesana_frontend';
 }
+
+
