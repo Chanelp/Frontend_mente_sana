@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModalProfesionalComponent } from '../modal-profesional/modal-profesional.component';
 
@@ -10,9 +10,17 @@ import { ModalProfesionalComponent } from '../modal-profesional/modal-profesiona
   styleUrl: './card-profesional.component.css'
 })
 export class CardProfesionalComponent {
+
+  @Input() terapeuta: any;
+  @Input() index: any = 0;
+
   isVisible = false;
 
   showModal(){
     this.isVisible = !this.isVisible;
+  }
+
+  getImagenUrl(index: number): string {
+    return `assets/images/tera${index + 1}.jpg`;
   }
 }

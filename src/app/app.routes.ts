@@ -25,7 +25,7 @@ export const routes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'user-settings',
+        path: 'ajustes',
         component: UserSettingsComponent
     },
     {
@@ -35,6 +35,10 @@ export const routes: Routes = [
     {
         path: 'profesionales',
         component: PsicologosListaComponent
+    },
+    {
+        path: 'notificaciones',
+        component: HomeComponent
     }
     
 ];

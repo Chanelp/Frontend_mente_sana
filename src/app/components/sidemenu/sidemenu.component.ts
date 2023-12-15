@@ -25,11 +25,11 @@ export class SidemenuComponent {
   }
   notifications(){
     console.log("Notificaciones");
-    this.router.navigateByUrl("/escribir direccion")
+    this.router.navigateByUrl("/notificaciones")
   }
   settings(){
     console.log("Ajustes");
-    this.router.navigateByUrl("/user-settings")
+    this.router.navigateByUrl("/ajustes")
   }
   logout() {
     console.log("Cerrar sesion");

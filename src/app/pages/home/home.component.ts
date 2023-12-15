@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
   }
 
   private getProfesionales(){
-    this.terapeutaService.obtenerPsicologos()
+    this.terapeutaService.obtenerPsicologos(5)
     .subscribe({
       next: (terapeutas) => {
         console.log(terapeutas);

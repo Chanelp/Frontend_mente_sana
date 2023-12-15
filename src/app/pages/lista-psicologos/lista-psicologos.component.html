@@ -1,12 +1,5 @@
 <app-layout>
     <main class="main grid grid-cols-4 gap-12 m-16">
-        <app-card-profesional></app-card-profesional>
-        <app-card-profesional></app-card-profesional>
-        <app-card-profesional></app-card-profesional>
-        <app-card-profesional></app-card-profesional>
-        <app-card-profesional></app-card-profesional>
-        <app-card-profesional></app-card-profesional>
-        <app-card-profesional></app-card-profesional>
-        <app-card-profesional></app-card-profesional>
+        <app-card-profesional *ngFor="let ter of terapeutas(); let i = index" [terapeuta]="ter.name" [index]="i"></app-card-profesional>
     </main>
 </app-layout>

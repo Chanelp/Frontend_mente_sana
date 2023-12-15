@@ -80,7 +80,7 @@
                 <div class="online">
                     <ul>
                         <li *ngFor="let terapeuta of terapeutas(); let i = index">
-                            <img [src]="getImagenUrl(i)" alt="" class="rounded-full h-12 w-12 mb-4">
+                            <img [src]="getImagenUrl(i)" alt="Imagen Terapeuta" class="rounded-full h-12 w-12 mb-4">
                             <span class="m-4"> {{ terapeuta.name }} {{ terapeuta.specialty }}</span>
                             <span class="m-4"> {{ terapeuta.last_name }} {{ terapeuta.license }}</span>
                         </li>
