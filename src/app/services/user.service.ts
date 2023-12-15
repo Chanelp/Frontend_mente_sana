@@ -7,9 +7,8 @@ import { User, UserLogin } from '../models/users.model';
   providedIn: 'root'
 })
 export class UserService {
-
-  apiUrl = "https://backendmentesana-production.up.railway.app"
   private http = inject(HttpClient);
+  apiUrl = "https://backendmentesana-production.up.railway.app"
 
   constructor() { }
 

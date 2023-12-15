@@ -37,9 +37,6 @@ export const routes: Routes = [
         path: 'profesionales',
         component: PsicologosListaComponent
     }
-
-
-   
     
 ];
 

@@ -1,19 +1,17 @@
-// psicologos.service.ts
-export interface Psicologo {
-  id: number;
-  nombre: string;
-  profesion: string;
-  descripcion: string;
-}
+import { HttpClient } from '@angular/common/http';
+import { Injectable, inject } from '@angular/core';
+import { Terapeuta } from '../models/profesional.model';
 
+@Injectable({
+  providedIn: 'root'
+})
 export class PsicologosService {
+  private http = inject(HttpClient);
+  apirURL: string = "https://backendmentesana-production.up.railway.app"
+
   constructor() { }
 
-  obtenerPsicologos(): Psicologo[] {
-    return [
-      { id: 1, nombre: 'Juan Pérez', profesion: 'Psicólogo Clínico', descripcion: 'Descripción de Juan Pérez...' },
-      { id: 2, nombre: 'María Rodríguez', profesion: 'Psicóloga Escolar', descripcion: 'Descripción de María Rodríguez...' },
-      // ...
-    ];
+  obtenerPsicologos() {
+    return this.http.get<Terapeuta[]>(`${this.apirURL}/therapist/therapists/}?limit=4`);
   }
 }

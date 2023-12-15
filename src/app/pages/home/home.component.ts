@@ -7,6 +7,8 @@ import { JwtModule, JWT_OPTIONS } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
 import { SidemenuComponent } from '../../components/sidemenu/sidemenu.component';
 import { LayoutComponent } from '../../components/layout/layout.component';
+import { PsicologosService } from '../../services/psicologos.service';
+import { Terapeuta } from '../../models/profesional.model';
 
 
 @Component({
@@ -24,11 +26,13 @@ import { LayoutComponent } from '../../components/layout/layout.component';
 export class HomeComponent implements OnInit {
 
   users = signal<User[]>([]);
+  terapeutas = signal<Terapeuta[]>([]);
   token: string;
   userId: number | string;
   userData: any;
 
   private userService = inject(UserService);
+  private terapeutaService = inject(PsicologosService);
   private router = inject(Router);
 
   constructor(private jwtService: JwtHelperService) {
@@ -37,24 +41,25 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.getTodayDate();
+    this.getProfesionales();
+
     const decodedToken = this.jwtService.decodeToken(this.token);
     this.userId = decodedToken.sub
-    console.log("EL ID USER ES", this.userId);
+    
     this.getUserProfile();
   }
 
-  private getUsers() {
-    this.userService.getAllUsers()
-      .subscribe({
-        next: (users) => {
-          console.log(users);
-
-          this.users.set(users);
-        },
-        error: (err) => {
-          console.log(err);
-        }
-      })
+  private getProfesionales(){
+    this.terapeutaService.obtenerPsicologos()
+    .subscribe({
+      next: (terapeutas) => {
+        console.log(terapeutas);
+        this.terapeutas.set(terapeutas);
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    })
   }
 
   getUserProfile() {
@@ -81,6 +86,11 @@ export class HomeComponent implements OnInit {
 
     const formattedDate = `${hour}:${minute} PM Today ${month}/${day}/${year}`;
     return formattedDate;
+  }
+
+  getImagenUrl(index: number): string {
+    // Supongamos que tus imágenes están en la carpeta assets y siguen el patrón tera1.jpg, tera2.jpg, ...
+    return `assets/images/tera${index + 1}.jpg`;
   }
 
 }

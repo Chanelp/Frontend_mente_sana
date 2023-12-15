@@ -79,10 +79,10 @@
                 <p class="text-sm text-gray-500">Especialistas de la comunidad que están en línea</p>
                 <div class="online">
                     <ul>
-                        <li *ngFor="let user of users()">
-                            <img src="assets/images/terhome.jpg" alt="" class="rounded-full h-12 w-12 mb-4">
-                            <span class="m-4"> {{ user.name }} {{ user.last_name }}</span>
-                            <span class="m-4"> {{ user.email }} {{ user.rol }}</span>
+                        <li *ngFor="let terapeuta of terapeutas(); let i = index">
+                            <img [src]="getImagenUrl(i)" alt="" class="rounded-full h-12 w-12 mb-4">
+                            <span class="m-4"> {{ terapeuta.name }} {{ terapeuta.specialty }}</span>
+                            <span class="m-4"> {{ terapeuta.last_name }} {{ terapeuta.license }}</span>
                         </li>
                     </ul>
                 </div>
