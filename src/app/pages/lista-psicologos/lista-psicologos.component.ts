@@ -2,9 +2,9 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
- selector: 'app-psicologos-lista',
- templateUrl: './psicologos-lista.component.html',
- styleUrls: ['./psicologos-lista.component.css']
+ selector: 'app-lista-psicologos',
+ templateUrl: './lista-psicologos.component.html',
+ styleUrls: ['./lista-psicologos.component.css']
 })
 export class PsicologosListaComponent {
  @Input() psicologo: any;

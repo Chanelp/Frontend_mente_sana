@@ -29,7 +29,7 @@ export class SidemenuComponent {
   }
   settings(){
     console.log("Ajustes");
-    this.router.navigateByUrl("/escribir direccion")
+    this.router.navigateByUrl("/user-settings")
   }
   logout() {
     console.log("Cerrar sesion");
