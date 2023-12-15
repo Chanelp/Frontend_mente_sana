@@ -19,6 +19,10 @@
   background-size: cover;
 }
 
+app-sidemenu{
+  margin-left: -80px;
+}
+
 .container {
   position: relative;
   max-width: auto;
