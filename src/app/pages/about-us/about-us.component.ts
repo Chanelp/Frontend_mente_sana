@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
@@ -9,5 +10,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './about-us.component.css'
 })
 export class AboutUsComponent {
+  private router = inject(Router);
 
+  home(){
+    this.router.navigateByUrl("/login");
+  }
 }
