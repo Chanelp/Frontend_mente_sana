@@ -32,6 +32,6 @@ export class UserService {
   }
 
   agendarCita(citaData: any){
-    return this.http.post(this.apiUrl, citaData);
+    return this.http.post(`${this.apiUrl}/therapy/new-therapy`, citaData);
   }
 }
