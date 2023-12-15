@@ -1,4 +1,4 @@
-export interface Terapeuta {
+export interface Terapeuta{
     email:                    string;
     last_name:                string;
     license:                  string;

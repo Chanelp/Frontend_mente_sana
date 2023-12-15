@@ -12,6 +12,6 @@ export class PsicologosService {
   constructor() { }
 
   obtenerPsicologos() {
-    return this.http.get<Terapeuta[]>(`${this.apirURL}/therapist/therapists/}?limit=4`);
+    return this.http.get<Terapeuta[]>(`${this.apirURL}/therapist/therapists/}?limit=5`);
   }
 }
