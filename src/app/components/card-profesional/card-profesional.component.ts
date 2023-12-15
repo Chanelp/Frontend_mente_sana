@@ -12,7 +12,7 @@ import { ModalProfesionalComponent } from '../modal-profesional/modal-profesiona
 export class CardProfesionalComponent {
 
   @Input() terapeuta: any;
-  @Input() index: any = 0;
+  //@Input() index: any = 0;
 
   isVisible = false;
 
