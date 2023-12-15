@@ -1,8 +1,12 @@
-<ul>
-    <li *ngFor="let psicologo of psicologos">
-       <h2>{{ psicologo.nombre }}</h2>
-       <h3>{{ psicologo.profesion }}</h3>
-       <p>{{ psicologo.descripcion }}</p>
-       <button (click)="agendarCita(psicologo.id)">Agendar cita</button>
-    </li>
-   </ul>
+<app-layout>
+    <main class="main grid grid-cols-4 gap-12 m-16">
+        <app-card-profesional></app-card-profesional>
+        <app-card-profesional></app-card-profesional>
+        <app-card-profesional></app-card-profesional>
+        <app-card-profesional></app-card-profesional>
+        <app-card-profesional></app-card-profesional>
+        <app-card-profesional></app-card-profesional>
+        <app-card-profesional></app-card-profesional>
+        <app-card-profesional></app-card-profesional>
+    </main>
+</app-layout>

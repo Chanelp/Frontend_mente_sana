@@ -34,7 +34,7 @@ export const routes: Routes = [
         component: CitasComponent
     },
     {
-        path: 'profesionales',
+        path: 'lista',
         component: PsicologosListaComponent
     }
     
