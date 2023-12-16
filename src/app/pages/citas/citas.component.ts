@@ -37,7 +37,7 @@ export class CitasComponent {
   private router = inject(Router);
   
   constructor() {
-    this.fechaSeleccionada = '11/11/2023'; 
+    this.fechaSeleccionada = '12/18/2023'; 
     this.actualizarOtroInput();
     this.userId = localStorage.getItem("idUser");
   }
