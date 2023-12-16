@@ -24,8 +24,8 @@ export class SidemenuComponent {
     this.router.navigateByUrl("/profesionales")
   }
   notifications(){
-    console.log("Notificaciones");
-    this.router.navigateByUrl("/notificaciones")
+    console.log("Agenda");
+    this.router.navigateByUrl("/agenda")
   }
   settings(){
     console.log("Ajustes");

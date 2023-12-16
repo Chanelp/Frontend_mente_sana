@@ -14,8 +14,4 @@ export class PsicologosService {
   obtenerPsicologos(limit: number | string) {
     return this.http.get<Terapeuta[]>(`${this.apirURL}/therapist/therapists/${limit}`);
   }
-
-  obtenerSesiones(id: any){
-    return this.http.get(`${this.apirURL}/therapy/therapy_sessions/${id}`)
-  }
 }

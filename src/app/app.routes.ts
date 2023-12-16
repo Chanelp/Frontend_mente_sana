@@ -7,6 +7,7 @@ import { CitasComponent } from './pages/citas/citas.component';
 import {UserSettingsComponent} from './pages/user-settings/user-settings.component';
 import { ProfesionalesComponent } from './pages/profesionales/profesionales.component';
 import { PsicologosListaComponent } from './pages/lista-psicologos/lista-psicologos.component';
+import { NotificacionesComponent } from './pages/notificaciones/notificaciones.component';
 
 export const routes: Routes = [
     {
@@ -38,8 +39,8 @@ export const routes: Routes = [
         component: PsicologosListaComponent
     },
     {
-        path: 'notificaciones',
-        component: HomeComponent
+        path: 'agenda',
+        component: NotificacionesComponent
     }
     
 ];

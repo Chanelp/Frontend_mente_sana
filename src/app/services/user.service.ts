@@ -27,11 +27,15 @@ export class UserService {
     localStorage.removeItem("token");
   }
 
-  getUserProfile(id: number | string){
+  getUserProfile(id: any){
     return this.http.get(`${this.apiUrl}/user/user/${id}`);
   }
 
   agendarCita(citaData: any){
     return this.http.post(`${this.apiUrl}/therapy/new-therapy`, citaData);
+  }
+
+  obtenerSesiones(id: any){
+    return this.http.get(`${this.apiUrl}/user/get_user_sessions/${id}`)
   }
 }
